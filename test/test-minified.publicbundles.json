@@ -1,0 +1,10 @@
+{
+  "#settings": {
+    "minify": true
+  },
+  "public-minified-test": [ 
+    "mockup.html",
+    "mockup.less",
+    "mockup.coffee"
+  ]
+}

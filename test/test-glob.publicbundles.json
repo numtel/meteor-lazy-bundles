@@ -1,0 +1,6 @@
+{
+  "public-glob-test": [ 
+    "globber/*.js"
+  ]
+}
+

@@ -1,0 +1,3 @@
+tester = ->
+  console.log 'cheese'
+
