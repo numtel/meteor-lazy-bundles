@@ -6,6 +6,8 @@ With this package, you can place `xxx.publicbundles.json` or `xxx.privatebundles
 
 Source files will be transpiled and collected into a single `.js` and `.css` file for each bundle.
 
+> This package supersedes [`numtel:publicsources`](https://github.com/numtel/meteor-publicsources) and [`numtel:privatesources`](https://github.com/numtel/meteor-privatesources).
+
 ## Installation
 
 ```
