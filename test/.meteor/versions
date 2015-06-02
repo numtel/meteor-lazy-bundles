@@ -38,6 +38,7 @@ minifiers@1.1.5
 minimongo@1.0.8
 mobile-status-bar@1.0.3
 mongo@1.1.0
+nooitaf:colors@0.0.2
 numtel:lazy-bundles@1.0.1
 observe-sequence@1.0.6
 ordered-dict@1.0.3

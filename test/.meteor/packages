@@ -11,3 +11,5 @@ less
 coffeescript
 numtel:lazy-bundles
 iron:router
+http
+nooitaf:colors

@@ -1,4 +1,4 @@
-# numtel:lazy-bundles
+# numtel:lazy-bundles [![Build Status](https://travis-ci.org/numtel/meteor-lazy-bundles.svg?branch=master)](https://travis-ci.org/numtel/meteor-lazy-bundles)
 
 By default, Meteor does not perform any special handling on files placed inside the `public` and `private` directories of your application.
 
@@ -80,19 +80,18 @@ See [`test/server/router.js`](test/server/router.js) for an example of how to co
 
 ## Test application
 
-Test cases for this package are not executed using the normal `meteor test-packages` command. Instead, start the Meteor app inside of the `test` directory and see the status in the browser.
+Test cases for this package are not executed using the normal `meteor test-packages` command. Instead, start the Meteor app inside of the `test` directory and see the results in the console.
 
 ```bash
 $ git clone https://github.com/numtel/meteor-lazy-bundles
 
 $ cd meteor-lazy-bundles/test
 
+# Test results will be output to the console
 $ meteor
-
-# Open browser to http://localhost:3000/ to view test results
 ```
 
-Test cases are described in [`test/client/index.js`](test/client/index.js).
+Test cases are described in [`test/server/index.js`](test/server/index.js).
 
 ## License
 
