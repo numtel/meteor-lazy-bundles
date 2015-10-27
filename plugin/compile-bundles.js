@@ -16,12 +16,12 @@ var relToolDir = path.join(rootRelPath, toolDir);
 function requireMeteorTool(file) {
   return Npm.require(path.join(relToolDir, file + '.js'))
 }
-
+console.log('tooolasdf', toolDir);
 // Load required meteor build tools
-var compiler             = requireMeteorTool('compiler');
-var isopackets           = requireMeteorTool('isopackets');
+var compiler             = requireMeteorTool('isobuild/compiler');
+var isopackets           = requireMeteorTool('isobuild/isopack');
 var projectContextModule = requireMeteorTool('project-context');
-var PackageSource        = requireMeteorTool('package-source');
+var PackageSource        = requireMeteorTool('isobuild/package-source');
 
 // Obtain array of loaded packages to make build plugins available to bundles
 var loadedPackages = [];
@@ -107,7 +107,14 @@ function generateBundleHandler(relativeRootPath) {
         packageMap: projectContext.packageMap,
         isopackCache: projectContext.isopackCache,
         includeCordovaUnibuild: false
-      }).unibuilds[0];
+      });
+//       }).unibuilds[0];
+      console.log('compuled', name, compiled.unibuilds[0]);
+      compiled.saveToPath(path.join(process.cwd(), 'public'), {
+//         includeIsopackBuildInfo: true
+      });
+
+
 
       var scripts = compiled.prelinkFiles;
       var styleSheets = compiled.resources.filter(function(resource) {
